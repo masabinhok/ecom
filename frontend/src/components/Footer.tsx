@@ -5,7 +5,7 @@ import { footerData, socials } from "../constants"
 
 const Footer = () => {
   return (
-    <main className="w-full bg-black-800 text-white-100 flex flex-col items-center justify-center gap-5 p-5 ">
+    <main className="w-full bg-black-800 text-white-100 flex flex-col items-center justify-center gap-5 p-5 fixed bottom-0 z-50 ">
       <section className=" grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] w-full max-w-[1320px] text-sm mt-10 ">
         <ul className="flex flex-col  p-5 ">
           <li className="font-bold text-xl">Exclusive</li>

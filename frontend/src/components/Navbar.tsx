@@ -19,7 +19,7 @@ const NavElem = [{
 
 const Navbar = () => {
   return (
-    <section className="bg-white border-b border-gray-200 h-24 flex-center pt-5 fixed top-10 w-full">
+    <section className="bg-white border-b border-gray-200 h-24 flex-center pt-5 fixed top-10 w-full z-50">
       <nav className="flex items-center justify-between max-w-[1320px] w-full">
         <div className="flex-center">
           <Link to="/">
