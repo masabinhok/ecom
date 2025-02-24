@@ -1,6 +1,7 @@
 import { Link } from "react-router"
-import { heroImages, sidebarData } from "../constants"
+import { heroImages } from "../constants"
 import { useEffect, useState } from "react"
+import Sidebar from "./Sidebar";
 
 const Hero = () => {
   const [currentImage, setCurrentImage] = useState<number>(0);
@@ -16,18 +17,8 @@ const Hero = () => {
   }, [currentImage])
   return (
     <main className="w-full flex">
-      <section className="flex-[1]">
-        <ul className="flex flex-col gap-5 p-5 border-r border-black-200 w-full pr-20 ">
-          {
-            sidebarData.map((item, index) => (
-              <Link to={item.link} key={index}>
-                <li className="">{item.title}</li>
-              </Link>
-            ))
-          }
-        </ul>
-      </section>
-      <section className="flex items-center justify-center p-10 flex-[4] ">
+      <Sidebar />
+      <section className="flex items-center justify-center p-10 flex-[4]">
         <div className="relative">
           <Link to={heroImages[currentImage].link}>
             <img src={heroImages[currentImage].src} alt="" className="object-cover aspect-[16:9] rounded-sm " />
