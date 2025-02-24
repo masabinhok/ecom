@@ -9,7 +9,7 @@ const Layout = () => {
     <>
       <Offer />
       <Navbar />
-      <main className="min-h-screen">
+      <main className="w-full flex justify-center mt-34 min-h-screen">
         <Outlet />
       </main>
 

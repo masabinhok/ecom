@@ -1,0 +1,62 @@
+import { Link } from "react-router"
+import { sidebarData } from "../constants"
+import { beautyAd, electronicsAd, globalAd, nabilBankAd, powderAd } from "../assets"
+import { useEffect, useState } from "react"
+
+
+const heroImages = [
+  nabilBankAd, powderAd, electronicsAd, globalAd, beautyAd
+]
+
+const Hero = () => {
+  const [currentImage, setCurrentImage] = useState<number>(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImage((prev) => ((prev + 1) % heroImages.length))
+    }, 1000)
+
+    return () => {
+      clearInterval(interval)
+    }
+  }, [currentImage])
+  return (
+    <main className="w-full flex">
+      <section className="flex-[1]">
+        <ul className="flex flex-col gap-5 p-5 border-r border-black-200 w-full pr-20 ">
+          {
+            sidebarData.map((item, index) => (
+              <Link to={item.link} key={index}>
+                <li className="">{item.title}</li>
+              </Link>
+            ))
+          }
+        </ul>
+      </section>
+      <section className="flex items-center justify-center p-10 flex-[4] ">
+        <div className="relative">
+          <Link to='/shop/1'>
+          <img src={heroImages[currentImage]} alt="" className="object-cover aspect-[16:9] rounded-sm " />
+          </Link>
+          <div className="absolute bottom-5 left-50 right-50 flex-center gap-5">
+            {heroImages.map((image, index) => {
+              return (
+                <div>
+                  <button onClick={() => {
+                    setCurrentImage(index)
+                  }} className={`size-3 rounded-full ${currentImage === index ? "bg-white-100" : "bg-black-200"
+                    }`}>
+                  </button>
+                </div>
+
+              )
+            })}
+          </div>
+        </div>
+
+      </section>
+    </main>
+  )
+}
+
+export default Hero

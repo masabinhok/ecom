@@ -1,8 +1,11 @@
+import Hero from "../components/Hero"
 
 
 const HomePage = () => {
   return (
-    <div>HomePage</div>
+    <main className="max-w-[1320px] w-full">
+      <Hero />
+    </main>
   )
 }
 

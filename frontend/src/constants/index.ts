@@ -90,3 +90,42 @@ export const socials = [
     icon: linkedin
   },
 ]
+
+export const sidebarData = [
+  {
+    title: "Women's Fashion",
+    link: "/shop/womens-fashion"
+  },
+  {
+    title: "Men's Fashion",
+    link: "/shop/mens-fashion"
+  },
+  {
+    title: "Electronics",
+    link: "/shop/electronics"
+  },
+  {
+    title: "Home & Lifestyle",
+    link: "/shop/home-lifestyle"
+  },
+  {
+    title: "Medicine",
+    link: "/shop/medicine"
+  },
+  {
+    title: "Sports & Outdoor",
+    link: "/shop/sports-outdoor"
+  },
+  {
+    title: "Baby's & Toys",
+    link: "/shop/baby-toys"
+  },
+  {
+    title: "Groceries & Pets",
+    link: "/shop/groceries-pets"
+  },
+  {
+    title: "Health & Beauty",
+    link: "/shop/health-beauty"
+  },
+]

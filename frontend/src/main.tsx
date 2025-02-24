@@ -13,6 +13,7 @@ import SignUp from './pages/Signup.tsx'
 import Login from './pages/Login.tsx'
 import AuthLayout from './pages/AuthLayout.tsx'
 import Layout from './pages/Layout.tsx'
+import Shop from './pages/Shop.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -30,6 +31,7 @@ createRoot(document.getElementById('root')!).render(
           <Route path="contact" element={<Contact />} />
           <Route path="product-details/:id" element={<ProductDetails />} />
           <Route path="account" element={<Account />} />
+          <Route path="shop/:id" element={<Shop />} />
         </Route>
       </Routes>
     </BrowserRouter>
