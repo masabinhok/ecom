@@ -1,12 +1,6 @@
 import { Link } from "react-router"
-import { sidebarData } from "../constants"
-import { beautyAd, electronicsAd, globalAd, nabilBankAd, powderAd } from "../assets"
+import { heroImages, sidebarData } from "../constants"
 import { useEffect, useState } from "react"
-
-
-const heroImages = [
-  nabilBankAd, powderAd, electronicsAd, globalAd, beautyAd
-]
 
 const Hero = () => {
   const [currentImage, setCurrentImage] = useState<number>(0);
@@ -35,8 +29,8 @@ const Hero = () => {
       </section>
       <section className="flex items-center justify-center p-10 flex-[4] ">
         <div className="relative">
-          <Link to='/shop/1'>
-          <img src={heroImages[currentImage]} alt="" className="object-cover aspect-[16:9] rounded-sm " />
+          <Link to={heroImages[currentImage].link}>
+            <img src={heroImages[currentImage].src} alt="" className="object-cover aspect-[16:9] rounded-sm " />
           </Link>
           <div className="absolute bottom-5 left-50 right-50 flex-center gap-5">
             {heroImages.map((image, index) => {
@@ -47,8 +41,8 @@ const Hero = () => {
                   }} className={`size-3 rounded-full ${currentImage === index ? "bg-white-100" : "bg-black-200"
                     }`}>
                   </button>
+                  <img src={image.src} className="hidden size-0" alt="hidden_image" />
                 </div>
-
               )
             })}
           </div>

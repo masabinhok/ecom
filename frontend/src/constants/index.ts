@@ -1,4 +1,5 @@
 import { facebook, instagram, linkedin, twitter } from "../assets"
+import { beautyAd, electronicsAd, globalAd, nabilBankAd, powderAd } from "../assets"
 
 export const footerData = [
   {
@@ -129,3 +130,27 @@ export const sidebarData = [
     link: "/shop/health-beauty"
   },
 ]
+
+
+export const heroImages = [
+  {
+    link: "/shop/nabil-bank",
+    src: nabilBankAd
+  },
+  {
+    link: "/shop/beauty-products",
+    src: beautyAd
+  },
+  {
+    link: "/shop/global-products",
+    src: globalAd
+  },
+  {
+    link: "/shop/powders",
+    src: powderAd
+  },
+  {
+    link: "/shop/electronics",
+    src: electronicsAd
+  }
+];
