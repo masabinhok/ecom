@@ -19,7 +19,7 @@ const NavElem = [{
 
 const Navbar = () => {
   return (
-    <section className="bg-white border-b border-gray-200 h-24 flex-center pt-5">
+    <section className="bg-white border-b border-gray-200 h-24 flex-center pt-5 fixed top-10 w-full">
       <nav className="flex items-center justify-between max-w-[1320px] w-full">
         <div className="flex-center">
           <Link to="/">
@@ -42,14 +42,14 @@ const Navbar = () => {
         <div className="flex-center gap-5">
           <div className="flex-center bg-gray-100 rounded-sm px-4 py-2 w-full">
             <input type="search" placeholder="What are you looking for?" className="text-sm w-[200px] outline-none " />
-            <img src={search} alt="search" className="w-6 h-auto cursor-pointer" />
+            <img src={search} alt="search" className="size-5 cursor-pointer" />
           </div>
-          <div className="flex-center gap-5">
+          <div className="flex-center gap-5 ">
             <Link to="/wishlist">
-              <img src={heart} alt="wishlist" className="w-7 h-auto object-cover" />
+              <img src={heart} alt="wishlist" className="w-8 h-auto object-cover" />
             </Link>
             <Link to="/cart">
-              <img src={cart} alt="cart" className="w-10 h-auto object-cover" />
+              <img src={cart} alt="cart" className="size-10" />
             </Link>
           </div>
 

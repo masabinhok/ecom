@@ -3,7 +3,7 @@ import { NavLink } from "react-router"
 
 const Offer = () => {
   return (
-    <div className="bg-black text-white w-full h-10 flex-center text-sm ">
+    <div className="bg-black text-white w-full h-10 flex-center text-sm fixed top-0 ">
       <div className="flex-center gap-2 ">
         <h1 >Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!</h1>
         <NavLink to="/product-details/swimsuits" className="font-semibold underline">ShopNow</NavLink>

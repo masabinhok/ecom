@@ -1,4 +1,4 @@
-import heart from './heart.svg'
+import heart from './heart.png'
 import cart from './cart.svg'
 import search from './search.svg'
 import qrcode from './qrcode.svg'
