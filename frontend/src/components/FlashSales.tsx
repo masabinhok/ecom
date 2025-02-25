@@ -1,6 +1,6 @@
 import { Link } from "react-router"
 import { flashSales } from "../constants"
-import Stopwatch from "./Stopwatch"
+import Timer from "./Timer"
 
 
 
@@ -13,7 +13,7 @@ const FlashSales = () => {
       </div>
       <div className="flex items-end gap-10">
         <p className="text-3xl  font-semibold">Flash Sales</p>
-        <Stopwatch />
+        <Timer />
       </div>
       <section className="mt-10 grid grid-cols-4 gap-10">
         {
