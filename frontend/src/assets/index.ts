@@ -35,12 +35,19 @@ import gpPad from './gp-pad.png'
 import laptop from './laptop.png'
 import satinJacket from './satin-jacket.png'
 import electricCar from './electric-car.png'
+import ps5 from './ps5.png'
+import womenCollection from './women-collection.png'
+import perfume from './perfume.png'
+import speakers from './speakers.png'
 
 export {
   heart,
+  ps5,
   speaker,
   cart,
   search,
+  womenCollection, 
+  perfume, speakers,
   qrcode,
   electricCar,
   satinJacket,
