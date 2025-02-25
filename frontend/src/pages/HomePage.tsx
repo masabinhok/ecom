@@ -1,3 +1,4 @@
+import BestSellers from "../components/BestSellers"
 import Categories from "../components/Categories"
 import FlashSales from "../components/FlashSales"
 import Hero from "../components/Hero"
@@ -9,6 +10,7 @@ const HomePage = () => {
       <Hero />
       <FlashSales />
       <Categories />
+      <BestSellers/>
     </main>
   )
 }
