@@ -1,4 +1,6 @@
+import { useState } from "react"
 import { eye, heart } from "../assets"
+import { Link } from "react-router"
 
 interface ProductCardProps {
   product: {
@@ -15,8 +17,15 @@ interface ProductCardProps {
 }
 
 const ProductCard = ({ product, showDiscount, showDiscountAmount }: ProductCardProps) => {
+  const [hover, setHover] = useState<boolean>(false)
   return (
-    <div className="max-w-[270px] w-full">
+    <div onMouseEnter={() => {
+      setHover(true)
+    }}
+      onMouseLeave={() => {
+        setHover(false)
+      }}
+      className="max-w-[270px] w-full">
       <div className="relative bg-black-100 flex-center h-[250px] rounded-sm ">
         <img src={product.image} alt="gamepad" className=" object-cover" />
         {
@@ -24,6 +33,13 @@ const ProductCard = ({ product, showDiscount, showDiscountAmount }: ProductCardP
           <button className="absolute top-2 left-2 bg-brand px-4 py-2 text-white rounded-sm text-xs">
             {((product.price - product.discount) / product.price * 100).toFixed(2)}% off
           </button>
+        }
+        {
+          hover && (
+            <Link to={`/product-details/${product.id}`} className="absolute bottom-0 py-3 w-full bg-black-900 text-white  text-center text-sm">
+              Add to Cart
+            </Link>
+          )
         }
 
         <button className="bg-white-200 absolute top-2 right-2 p-2 rounded-full cursor-pointer ">

@@ -1,6 +1,6 @@
 import { Link } from "react-router"
 import { leftArrow, rightArrow } from "../assets"
-import { categories, exploreProducts } from "../constants"
+import { exploreProducts } from "../constants"
 import ProductCard from "./ProductCard"
 
 const Explore = () => {
