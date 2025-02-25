@@ -27,6 +27,14 @@ import gucciBag from './gucci-bag.png'
 import cpuCooler from './cpu-cooler.png'
 import eye from './eye.svg'
 import speaker from './speaker.png'
+import curologySet from './curology-set.png'
+import camera from './camera.png'
+import footballBoot from './football-boot.png'
+import dogFood from './dog-food.png'
+import gpPad from './gp-pad.png'
+import laptop from './laptop.png'
+import satinJacket from './satin-jacket.png'
+import electricCar from './electric-car.png'
 
 export {
   heart,
@@ -34,6 +42,14 @@ export {
   cart,
   search,
   qrcode,
+  electricCar,
+  satinJacket,
+  laptop,
+  gpPad,
+  dogFood,
+  footballBoot,
+  camera,
+  curologySet,
   nabilBankAd, 
   gamepad,
   appstore,

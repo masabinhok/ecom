@@ -1,4 +1,4 @@
-import { bookshelf, cellphone, chair, cpuCooler, facebook, gamepad, gucciBag, instagram, jacket, keyboard, linkedin, monitor, twitter } from "../assets"
+import { bookshelf, camera, cellphone, chair, cpuCooler, curologySet, dogFood, electricCar, facebook, footballBoot, gamepad, gpPad, gucciBag, instagram, jacket, keyboard, laptop, linkedin, monitor, satinJacket, twitter } from "../assets"
 import { beautyAd, electronicsAd, globalAd, nabilBankAd, powderAd } from "../assets"
 
 export const footerData = [
@@ -258,5 +258,81 @@ export const bestSellers = [
     rating: 4.5,
     reviews: 65,
     image: bookshelf
+  }
+];
+
+
+export const exploreProducts = [
+  {
+    id: 1,
+    name: "Breed Dry Dog Food",
+    price: 100,
+    discount: 100, // No discount
+    rating: 4.5,
+    reviews: 95,
+    image: dogFood
+  },
+  {
+    id: 2,
+    name: "CANON EOS DSLR Camera",
+    price: 360,
+    discount: 360, // No discount
+    rating: 4.6,
+    reviews: 35,
+    image: camera
+  },
+  {
+    id: 3,
+    name: "ASUS FHD Gaming Laptop",
+    price: 700,
+    discount: 700, // No discount
+    rating: 4.7,
+    reviews: 65,
+    image: laptop
+  },
+  {
+    id: 4,
+    name: "Curology Product Set",
+    price: 500,
+    discount: 500, // No discount
+    rating: 4.8,
+    reviews: 145,
+    image: curologySet
+  },
+  {
+    id: 5,
+    name: "Kids Electric Car",
+    price: 960,
+    discount: 960, // No discount
+    rating: 4.5,
+    reviews: 65,
+    image: electricCar
+  },
+  {
+    id: 6,
+    name: "Jr. Zoom Soccer Cleats",
+    price: 1160,
+    discount: 1160, // No discount
+    rating: 4.6,
+    reviews: 35,
+    image: footballBoot
+  },
+  {
+    id: 7,
+    name: "GP11 Shooter USB Gamepad",
+    price: 660,
+    discount: 660, // No discount
+    rating: 4.4,
+    reviews: 55,
+    image: gpPad
+  },
+  {
+    id: 8,
+    name: "Quilted Satin Jacket",
+    price: 660,
+    discount: 660, // No discount
+    rating: 4.5,
+    reviews: 55,
+    image: satinJacket
   }
 ];

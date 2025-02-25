@@ -1,6 +1,7 @@
 import BestSellers from "../components/BestSellers"
 import Categories from "../components/Categories"
 import CategoryAd from "../components/CategoryAd"
+import Explore from "../components/Explore"
 import FlashSales from "../components/FlashSales"
 import Hero from "../components/Hero"
 
@@ -13,6 +14,7 @@ const HomePage = () => {
       <Categories />
       <BestSellers/>
       <CategoryAd/>
+      <Explore/>
     </main>
   )
 }

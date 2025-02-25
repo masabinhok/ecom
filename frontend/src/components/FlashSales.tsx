@@ -20,7 +20,7 @@ const FlashSales = () => {
         {
           flashSales.map((product) => {
             return (
-              <ProductCard key={product.id} product={product} showDiscount={true} />
+              <ProductCard key={product.id} product={product} showDiscount={true} showDiscountAmount={true} />
             )
           })
         }

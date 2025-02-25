@@ -11,9 +11,10 @@ interface ProductCardProps {
     reviews: number
   },
   showDiscount: boolean,
+  showDiscountAmount: boolean
 }
 
-const ProductCard = ({ product, showDiscount }: ProductCardProps) => {
+const ProductCard = ({ product, showDiscount, showDiscountAmount }: ProductCardProps) => {
   return (
     <div className="max-w-[270px] w-full">
       <div className="relative bg-black-100 flex-center h-[250px] rounded-sm ">
@@ -34,11 +35,19 @@ const ProductCard = ({ product, showDiscount }: ProductCardProps) => {
       </div>
       <div className="text-sm font-medium flex flex-col mt-4">
         <p className="">{product.name}</p>
-        <p className="text-brand mt-2">${product.discount} <span className="text-black-300 line-through">${product.price}</span></p>
-        <p className="flex gap-2 items-center mt-1">
-          <span className="text-yellow">{product.rating}</span>
-          <span className="text-black-300">({product.reviews})</span>
-        </p>
+        <div className={`flex ${showDiscountAmount ? "flex-col" : "flex-row items-end gap-3"} `}>
+          <p className="text-brand mt-2">${product.discount}
+            {
+              showDiscountAmount &&
+              <span className="text-black-300 line-through ml-2">${product.price}</span>
+            }
+          </p>
+          <p className="flex gap-2 items-center mt-1">
+            <span className="text-yellow">{product.rating}</span>
+            <span className="text-black-300">({product.reviews})</span>
+          </p>
+        </div>
+
       </div>
     </div>
   )
