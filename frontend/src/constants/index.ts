@@ -1,4 +1,4 @@
-import { chair, facebook, gamepad, instagram, keyboard, linkedin, monitor, twitter } from "../assets"
+import { cellphone, chair, facebook, gamepad, instagram, keyboard, linkedin, monitor, twitter } from "../assets"
 import { beautyAd, electronicsAd, globalAd, nabilBankAd, powderAd } from "../assets"
 
 export const footerData = [
@@ -193,3 +193,30 @@ export const flashSales = [
     image: chair
   }
 ];
+
+export const categories = [
+  {
+    name: 'Phones',
+    image: cellphone,
+  },
+  {
+    name: 'Computers',
+    image: cellphone,
+  },
+  {
+    name: 'Smartwatch',
+    image: cellphone,
+  },
+  {
+    name: 'Camera',
+    image: cellphone,
+  },
+  {
+    name: 'Headphones',
+    image: cellphone,
+  },
+  {
+    name: 'Gaming',
+    image: cellphone,
+  },
+]

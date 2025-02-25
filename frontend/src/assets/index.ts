@@ -18,6 +18,9 @@ import gamepad from './gamepad.png'
 import keyboard from './keyboard.png'
 import monitor from './monitor.png'
 import chair from './chair.png'
+import cellphone from './cellphone.svg'
+import rightArrow from './right-arrow.svg'
+import leftArrow from './left-arrow.svg'
 
 export {
   heart,
@@ -31,6 +34,8 @@ export {
   instagram,
   beautyAd,
   globalAd,
+  rightArrow, 
+  leftArrow,
   powderAd,
   electronicsAd,
   facebook,
@@ -39,5 +44,6 @@ export {
   keyboard, 
   monitor,
   chair,
-  linkedin
+  linkedin,
+  cellphone,
 }
