@@ -26,7 +26,7 @@ const Hero = () => {
           <div className="absolute bottom-5 left-50 right-50 flex-center gap-5">
             {heroImages.map((image, index) => {
               return (
-                <div>
+                <div key={index}>
                   <button onClick={() => {
                     setCurrentImage(index)
                   }} className={`size-3 rounded-full ${currentImage === index ? "bg-white-100" : "bg-black-200"
