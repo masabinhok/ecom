@@ -5,7 +5,7 @@ import { sidebarData } from "../constants"
 const Sidebar = () => {
   return (
     <section className="w-fit">
-      <ul className="flex flex-col gap-5 p-5 border-r border-black-200 w-full pr-20 ">
+      <ul className="flex flex-col gap-5 p-10  border-r border-black-200 w-full pr-20 ">
         {
           sidebarData.map((item, index) => (
             <Link to={item.link} key={index}>

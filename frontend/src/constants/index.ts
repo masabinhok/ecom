@@ -1,4 +1,4 @@
-import { facebook, instagram, linkedin, twitter } from "../assets"
+import { chair, facebook, gamepad, instagram, keyboard, linkedin, monitor, twitter } from "../assets"
 import { beautyAd, electronicsAd, globalAd, nabilBankAd, powderAd } from "../assets"
 
 export const footerData = [
@@ -152,5 +152,44 @@ export const heroImages = [
   {
     link: "/shop/electronics",
     src: electronicsAd
+  }
+];
+
+export const flashSales = [
+  {
+    id: 1,
+    name: "HAVIT HV-G92 Gamepad",
+    price: 160,
+    discount: 120, // Discounted Price
+    rating: 4.5,
+    reviews: 88,
+    image: gamepad
+  },
+  {
+    id: 2,
+    name: "AK-900 Wired Keyboard",
+    price: 1160,
+    discount: 960, // Discounted Price
+    rating: 4.3,
+    reviews: 75,
+    image: keyboard
+  },
+  {
+    id: 3,
+    name: "IPS LCD Gaming Monitor",
+    price: 400,
+    discount: 370, // Discounted Price
+    rating: 4.7,
+    reviews: 99,
+    image: monitor
+  },
+  {
+    id: 4,
+    name: "S-Series Comfort Chair",
+    price: 400,
+    discount: 375, // Discounted Price
+    rating: 4.7,
+    reviews: 99,
+    image: chair
   }
 ];

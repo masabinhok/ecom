@@ -14,6 +14,10 @@ import beautyAd from './beauty-ad.png'
 import globalAd from './global-ad.png'
 import powderAd from './powder-ad.png'
 import electronicsAd from './electronics-ad.png'
+import gamepad from './gamepad.png'
+import keyboard from './keyboard.png'
+import monitor from './monitor.png'
+import chair from './chair.png'
 
 export {
   heart,
@@ -21,6 +25,7 @@ export {
   search,
   qrcode,
   nabilBankAd, 
+  gamepad,
   appstore,
   playstore,
   instagram,
@@ -31,5 +36,8 @@ export {
   facebook,
   twitter,
   send,
+  keyboard, 
+  monitor,
+  chair,
   linkedin
 }

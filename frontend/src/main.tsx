@@ -32,6 +32,7 @@ createRoot(document.getElementById('root')!).render(
           <Route path="product-details/:id" element={<ProductDetails />} />
           <Route path="account" element={<Account />} />
           <Route path="shop/:id" element={<Shop />} />
+          <Route path="shop" element={<Shop />} />
         </Route>
       </Routes>
     </BrowserRouter>
