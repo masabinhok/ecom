@@ -39,6 +39,9 @@ import ps5 from './ps5.png'
 import womenCollection from './women-collection.png'
 import perfume from './perfume.png'
 import speakers from './speakers.png'
+import customerService from './customer-service.png'
+import secure from './secure.png'
+import delivery from './delivery.png'
 
 export {
   heart,
@@ -48,6 +51,9 @@ export {
   search,
   womenCollection, 
   perfume, speakers,
+  customerService,
+  secure,
+  delivery,
   qrcode,
   electricCar,
   satinJacket,

@@ -10,8 +10,8 @@ const Featured = () => {
         <div className="text-brand font-semibold">Featured</div>
       </div>
 
-      <div className="w-full  flex items-center mt-5 ">
-        <h1 className="text-3xl font-semibold">New Arrival</h1>
+      <div className="w-full  flex items-center mt-5 mb-10 ">
+        <h1   className="text-3xl font-semibold">New Arrival</h1>
       </div>
 
       <section className="flex gap-5 w-full text-white h-[600px]">

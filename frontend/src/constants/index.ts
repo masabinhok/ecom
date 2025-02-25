@@ -1,4 +1,4 @@
-import { bookshelf, camera, cellphone, chair, cpuCooler, curologySet, dogFood, electricCar, facebook, footballBoot, gamepad, gpPad, gucciBag, instagram, jacket, keyboard, laptop, linkedin, monitor, satinJacket, twitter } from "../assets"
+import { bookshelf, camera, cellphone, chair, cpuCooler, curologySet, customerService, delivery, dogFood, electricCar, facebook, footballBoot, gamepad, gpPad, gucciBag, instagram, jacket, keyboard, laptop, linkedin, monitor, satinJacket, twitter } from "../assets"
 import { beautyAd, electronicsAd, globalAd, nabilBankAd, powderAd } from "../assets"
 
 export const footerData = [
@@ -336,3 +336,21 @@ export const exploreProducts = [
     image: satinJacket
   }
 ];
+
+export const services = [
+  {
+    title: "Free and fast delivery",
+    desc: "Free delivery for all orders over $140",
+    image: delivery,
+  },
+  {
+    title: "24/7 Customer Service",
+    desc: "Friendly customer service available 24/7",
+    image: customerService,
+  },
+  {
+    title: "Money Back Guarantee",
+    desc: "We return money within 30 days.",
+    image: delivery,
+  }
+]

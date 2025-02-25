@@ -5,6 +5,7 @@ import Explore from "../components/Explore"
 import Featured from "../components/Featured"
 import FlashSales from "../components/FlashSales"
 import Hero from "../components/Hero"
+import Services from "../components/Services"
 
 
 const HomePage = () => {
@@ -17,6 +18,7 @@ const HomePage = () => {
       <CategoryAd/>
       <Explore/>
       <Featured/>
+      <Services/>
     </main>
   )
 }
