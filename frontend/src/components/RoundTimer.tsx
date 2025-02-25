@@ -7,11 +7,12 @@ interface TimerProps {
   s: number;
 }
 
-const Timer = ({ d, h, m, s }: TimerProps) => {
+const RoundTimer = ({ d, h, m, s }: TimerProps) => {
   const [day, setDay] = useState(d);
   const [hour, setHour] = useState(h);
   const [minute, setMinute] = useState(m);
   const [second, setSecond] = useState(s);
+
   useEffect(() => {
     const interval = setInterval(() => {
       setSecond((prev) => {
@@ -41,27 +42,25 @@ const Timer = ({ d, h, m, s }: TimerProps) => {
   const formatTime = (time: number) => String(time).padStart(2, "0");
 
   return (
-    <div className="flex flex-col">
-      <div className="grid grid-cols-7 text-xs">
-        <p>Days</p>
-        <span></span>
-        <p>Hours</p>
-        <span></span>
-        <p>Minutes</p>
-        <span></span>
-        <p>Seconds</p>
+    <div className="flex gap-5 my-5">
+      <div className="flex-center rounded-full flex-col p-2 bg-white size-16">
+        <p className="text-sm font-semibold">{formatTime(day)}</p>
+        <p className="text-[10px]">Days</p>
       </div>
-      <div className="grid grid-cols-7 text-3xl font-semibold">
-        <p>{formatTime(day)}</p>
-        <span className="text-brand">:</span>
-        <p>{formatTime(hour)}</p>
-        <span className="text-brand">:</span>
-        <p>{formatTime(minute)}</p>
-        <span className="text-brand">:</span>
-        <p>{formatTime(second)}</p>
+      <div className="flex-center rounded-full flex-col p-2 bg-white size-16">
+        <p className="text-sm font-semibold">{formatTime(hour)}</p>
+        <p className="text-[10px]">Hours</p>
+      </div>
+      <div className="flex-center rounded-full flex-col p-2 bg-white size-16">
+        <p className="text-sm font-semibold">{formatTime(minute)}</p>
+        <p className="text-[10px]">Minutes</p>
+      </div>
+      <div className="flex-center rounded-full flex-col p-2 bg-white size-16">
+        <p className="text-sm font-semibold">{formatTime(second)}</p>
+        <p className="text-[10px]">Seconds</p>
       </div>
     </div>
   );
 };
 
-export default Timer;
+export default RoundTimer;

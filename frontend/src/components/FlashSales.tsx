@@ -14,7 +14,7 @@ const FlashSales = () => {
       </div>
       <div className="flex items-end gap-10">
         <p className="text-3xl  font-semibold">Flash Sales</p>
-        <Timer />
+        <Timer d={5} h={23} m={59} s={35} />
       </div>
       <section className="mt-10 grid grid-cols-4 gap-10">
         {

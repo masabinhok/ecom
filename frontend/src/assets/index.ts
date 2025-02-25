@@ -26,9 +26,11 @@ import jacket from './jacket.png'
 import gucciBag from './gucci-bag.png'
 import cpuCooler from './cpu-cooler.png'
 import eye from './eye.svg'
+import speaker from './speaker.png'
 
 export {
   heart,
+  speaker,
   cart,
   search,
   qrcode,
