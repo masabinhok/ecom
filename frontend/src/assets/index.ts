@@ -25,6 +25,7 @@ import bookshelf from './bookshelf.png'
 import jacket from './jacket.png'
 import gucciBag from './gucci-bag.png'
 import cpuCooler from './cpu-cooler.png'
+import eye from './eye.svg'
 
 export {
   heart,
@@ -35,6 +36,7 @@ export {
   gamepad,
   appstore,
   playstore,
+  eye, 
   instagram,
   beautyAd,
   globalAd,

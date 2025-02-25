@@ -1,3 +1,4 @@
+import { eye, heart } from "../assets"
 
 interface ProductCardProps {
   product: {
@@ -23,6 +24,13 @@ const ProductCard = ({ product, showDiscount }: ProductCardProps) => {
             {((product.price - product.discount) / product.price * 100).toFixed(2)}% off
           </button>
         }
+
+        <button className="bg-white-200 absolute top-2 right-2 p-2 rounded-full cursor-pointer ">
+          <img src={heart} alt="wishlist_icon" className="size-4" />
+        </button>
+        <button className="bg-white-200 absolute top-12 right-2 p-2 rounded-full cursor-pointer ">
+          <img src={eye} alt="wishlist_icon" className="size-4" />
+        </button>
       </div>
       <div className="text-sm font-medium flex flex-col mt-4">
         <p className="">{product.name}</p>
