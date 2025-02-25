@@ -1,4 +1,4 @@
-import { cellphone, chair, facebook, gamepad, instagram, keyboard, linkedin, monitor, twitter } from "../assets"
+import { bookshelf, cellphone, chair, cpuCooler, facebook, gamepad, gucciBag, instagram, jacket, keyboard, linkedin, monitor, twitter } from "../assets"
 import { beautyAd, electronicsAd, globalAd, nabilBankAd, powderAd } from "../assets"
 
 export const footerData = [
@@ -220,3 +220,43 @@ export const categories = [
     image: cellphone,
   },
 ]
+
+
+export const bestSellers = [
+  {
+    id: 1,
+    name: "The North Coat",
+    price: 360,
+    discount: 260, // Discounted Price
+    rating: 4.5,
+    reviews: 65,
+    image: jacket
+  },
+  {
+    id: 2,
+    name: "Gucci Duffle Bag",
+    price: 1160,
+    discount: 960, // Discounted Price
+    rating: 4.6,
+    reviews: 65,
+    image: gucciBag
+  },
+  {
+    id: 3,
+    name: "RGB Liquid CPU Cooler",
+    price: 160,
+    discount: 160, // No discount
+    rating: 4.7,
+    reviews: 65,
+    image: cpuCooler
+  },
+  {
+    id: 4,
+    name: "Small Bookshelf",
+    price: 360,
+    discount: 170, // Discounted Price
+    rating: 4.5,
+    reviews: 65,
+    image: bookshelf
+  }
+];

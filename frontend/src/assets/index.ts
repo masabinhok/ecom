@@ -21,6 +21,10 @@ import chair from './chair.png'
 import cellphone from './cellphone.svg'
 import rightArrow from './right-arrow.svg'
 import leftArrow from './left-arrow.svg'
+import bookshelf from './bookshelf.png'
+import jacket from './jacket.png'
+import gucciBag from './gucci-bag.png'
+import cpuCooler from './cpu-cooler.png'
 
 export {
   heart,
@@ -46,4 +50,8 @@ export {
   chair,
   linkedin,
   cellphone,
+  bookshelf,
+  jacket, 
+  gucciBag,
+  cpuCooler,
 }
