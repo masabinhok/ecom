@@ -44,9 +44,11 @@ import secure from './secure.png'
 import delivery from './delivery.png'
 import loginSnap from './login-snap.png'
 import google from './google.svg'
+import deleteIcon from './delete.svg'
 
 export {
   loginSnap,
+  deleteIcon,
   google, 
   heart,
   ps5,

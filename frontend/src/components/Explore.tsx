@@ -22,7 +22,7 @@ const Explore = () => {
           </button>
         </div>
       </div>
-      <section className="mt-10 grid grid-cols-4 gap-10 mb-5 ">
+      <section className="mt-10 grid justify-items-center grid-cols-4 gap-10 mb-5 ">
         {
           exploreProducts.map((product) => {
             return (

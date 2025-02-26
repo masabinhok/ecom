@@ -21,7 +21,7 @@ const Categories = () => {
           </button>
         </div>
       </div>
-      <div className="grid grid-cols-6 gap-5 mt-10">
+      <div className="grid justify-items-center grid-cols-6 gap-5 mt-10">
         {
           categories.map((category, index) => (
             <Link key={index} to={`/shop/${category.name}`} >

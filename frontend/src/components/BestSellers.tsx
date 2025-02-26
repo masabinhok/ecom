@@ -19,7 +19,7 @@ const BestSellers = () => {
           </button>
         </Link>
       </div >
-      <section className="mt-10 grid grid-cols-4 gap-10">
+      <section className="mt-10 grid justify-items-center grid-cols-4 gap-10">
         {
           bestSellers.map((product) => {
             return (

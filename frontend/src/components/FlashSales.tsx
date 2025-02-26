@@ -16,7 +16,7 @@ const FlashSales = () => {
         <p className="text-3xl  font-semibold">Flash Sales</p>
         <Timer d={5} h={23} m={59} s={35} />
       </div>
-      <section className="mt-10 grid grid-cols-4 gap-10">
+      <section className="mt-10 grid justify-items-center grid-cols-4 gap-10">
         {
           flashSales.map((product) => {
             return (

@@ -26,7 +26,7 @@ const Service = ({ image, title, desc }: ServiceProps) => {
 const Services = () => {
   return (
     <section
-      className="grid grid-cols-3 w-full">
+      className="grid justify-items-center grid-cols-3 w-full">
       {
         services.map((service, index) => (
           <Service key={index} {...service} />

@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { eye, heart } from "../assets"
+import { deleteIcon, eye, heart } from "../assets"
 import { Link } from "react-router"
 
 interface ProductCardProps {
@@ -12,11 +12,12 @@ interface ProductCardProps {
     rating: number
     reviews: number
   },
-  showDiscount: boolean,
-  showDiscountAmount: boolean
+  showDiscount?: boolean,
+  showDiscountAmount?: boolean
+  isWishlist?: boolean
 }
 
-const ProductCard = ({ product, showDiscount, showDiscountAmount }: ProductCardProps) => {
+const ProductCard = ({ product, showDiscount = true, showDiscountAmount = true, isWishlist = false }: ProductCardProps) => {
   const [hover, setHover] = useState<boolean>(false)
   return (
     <div onMouseEnter={() => {
@@ -35,19 +36,37 @@ const ProductCard = ({ product, showDiscount, showDiscountAmount }: ProductCardP
           </button>
         }
         {
-          hover && (
+          (isWishlist || hover) && (
             <Link to={`/product-details/${product.id}`} className="absolute bottom-0 py-3 w-full bg-black-900 text-white  text-center text-sm">
               Add to Cart
             </Link>
           )
         }
 
-        <button className="bg-white-200 absolute top-2 right-2 p-2 rounded-full cursor-pointer ">
-          <img src={heart} alt="wishlist_icon" className="size-4" />
-        </button>
-        <button className="bg-white-200 absolute top-12 right-2 p-2 rounded-full cursor-pointer ">
-          <img src={eye} alt="wishlist_icon" className="size-4" />
-        </button>
+
+        {
+          !isWishlist &&
+          (
+            <>
+              <button className="bg-white-200 absolute top-2 right-2 p-2 rounded-full cursor-pointer ">
+                <img src={heart} alt="wishlist_icon" className="size-4" />
+              </button>
+              <button className="bg-white-200 absolute top-12 right-2 p-2 rounded-full cursor-pointer ">
+                <img src={eye} alt="wishlist_icon" className="size-4" />
+              </button></>
+
+          )
+        }
+
+        {
+          isWishlist && (
+            <button className="bg-white-200 absolute top-2 right-2 p-2 rounded-full cursor-pointer ">
+              <img src={deleteIcon} alt="wishlist_icon" className="size-4" />
+            </button>
+          )
+        }
+
+
       </div>
       <div className="text-sm font-medium flex flex-col mt-4">
         <p className="">{product.name}</p>
@@ -58,10 +77,14 @@ const ProductCard = ({ product, showDiscount, showDiscountAmount }: ProductCardP
               <span className="text-black-300 line-through ml-2">${product.price}</span>
             }
           </p>
-          <p className="flex gap-2 items-center mt-1">
-            <span className="text-yellow">{product.rating}</span>
-            <span className="text-black-300">({product.reviews})</span>
-          </p>
+          {
+            !isWishlist &&
+            <p className="flex gap-2 items-center mt-1">
+              <span className="text-yellow">{product.rating}</span>
+              <span className="text-black-300">({product.reviews})</span>
+            </p>
+          }
+
         </div>
 
       </div>

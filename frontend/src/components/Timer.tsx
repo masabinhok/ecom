@@ -42,7 +42,7 @@ const Timer = ({ d, h, m, s }: TimerProps) => {
 
   return (
     <div className="flex flex-col">
-      <div className="grid grid-cols-7 text-xs">
+      <div className="grid justify-items-center grid-cols-7 text-xs">
         <p>Days</p>
         <span></span>
         <p>Hours</p>
@@ -51,7 +51,7 @@ const Timer = ({ d, h, m, s }: TimerProps) => {
         <span></span>
         <p>Seconds</p>
       </div>
-      <div className="grid grid-cols-7 text-3xl font-semibold">
+      <div className="grid justify-items-center grid-cols-7 text-3xl font-semibold">
         <p>{formatTime(day)}</p>
         <span className="text-brand">:</span>
         <p>{formatTime(hour)}</p>
