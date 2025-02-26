@@ -49,10 +49,14 @@ import africanModel from './african-model.png'
 import emmaWatson from './emma-watson.png'
 import willSmith from './will-smith.png'
 import tomCruse from './tom-cruse.png'
+import call from './call.svg'
+import mail from './mail.svg'
 
 export {
   loginSnap,
   tomCruse,
+  call,
+  mail,
   willSmith,
   emmaWatson,
   deleteIcon,

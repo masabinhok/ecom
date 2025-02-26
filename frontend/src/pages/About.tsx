@@ -1,5 +1,5 @@
 import { Link } from "react-router";
-import { africanModel, facebook, instagram, linkedin, twitter } from "../assets";
+import { africanModel, instagram, linkedin, twitter } from "../assets";
 import { aboutUs, people } from "../constants";
 import Services from "../components/Services";
 
