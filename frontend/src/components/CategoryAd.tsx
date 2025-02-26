@@ -14,7 +14,7 @@ const CategoryAd = () => {
             Music Experience</h1>
           <RoundTimer d={5} h={23} m={59} s={35} />
           <Link className="w-fit" to="/shop">
-            <button className="text-sm bg-green text-white  w-fit px-10 py-3 rounded-sm cursor-pointer mt-5">
+            <button className="text-sm bg-green text-white  w-fit px-10 py-3 rounded-sm  mt-5">
               Buy Now!
             </button>
           </Link>

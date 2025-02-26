@@ -11,7 +11,7 @@ const Featured = () => {
       </div>
 
       <div className="w-full  flex items-center mt-5 mb-10 ">
-        <h1   className="text-3xl font-semibold">New Arrival</h1>
+        <h1 className="text-3xl font-semibold">New Arrival</h1>
       </div>
 
       <section className="flex gap-5 w-full text-white h-[600px]">
@@ -20,7 +20,7 @@ const Featured = () => {
           <div className="z-10 flex flex-col gap-3">
             <h1 className="font-medium text-xl">PlayStation 5</h1>
             <p className="text-xs font-light">Black and White version of the PS5 <br /> coming out on sale.</p>
-            <Link to='/shop/play-station' className="cursor-pointer">
+            <Link to='/shop/play-station' className="">
               <p className="underline text-sm  ">Shop Now</p></Link>
           </div>
         </div>
@@ -31,7 +31,7 @@ const Featured = () => {
 
               <h1 className="font-medium text-xl">Women's Collection </h1>
               <p className="text-xs font-light">Featured woman collections that  <br /> give you another vibe.</p>
-              <Link to='/shop/womens-collection' className="cursor-pointer">
+              <Link to='/shop/womens-collection' className="">
                 <p className="underline text-sm ">Shop Now</p></Link>
             </div>
           </div>
@@ -42,7 +42,7 @@ const Featured = () => {
 
                 <h1 className="font-medium text-xl">Speakers</h1>
                 <p className="text-xs font-light">Amazon wireless speakers</p>
-                <Link to='/shop/speakers' className="cursor-pointer">
+                <Link to='/shop/speakers' className="">
                   <p className="underline text-sm ">Shop Now</p></Link>
               </div>
             </div>
@@ -51,7 +51,7 @@ const Featured = () => {
               <div className="z-10 flex flex-col gap-3">
                 <h1 className="font-medium text-xl">Perfume</h1>
                 <p className="text-xs font-light">GUCCI INTENSE OUD EDP</p>
-                <Link to='/shop/perfumes' className="cursor-pointer">
+                <Link to='/shop/perfumes' className="">
                   <p className="underline text-sm">Shop Now</p></Link>
               </div>
             </div>

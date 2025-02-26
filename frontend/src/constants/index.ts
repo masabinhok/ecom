@@ -154,6 +154,7 @@ export const heroImages = [
     src: electronicsAd
   }
 ];
+
 export const flashSales = [
   {
     id: 1,
@@ -162,6 +163,7 @@ export const flashSales = [
     discount: 25, // Random Discount Percentage
     rating: 4.5,
     reviews: 88,
+    stock: 30, // Random stock value
     image: gamepad
   },
   {
@@ -171,6 +173,7 @@ export const flashSales = [
     discount: 15,
     rating: 4.3,
     reviews: 75,
+    stock: 20,
     image: keyboard
   },
   {
@@ -180,6 +183,7 @@ export const flashSales = [
     discount: 8,
     rating: 4.7,
     reviews: 99,
+    stock: 15,
     image: monitor
   },
   {
@@ -189,6 +193,7 @@ export const flashSales = [
     discount: 6,
     rating: 4.7,
     reviews: 99,
+    stock: 25,
     image: chair
   }
 ];
@@ -228,6 +233,7 @@ export const bestSellers = [
     discount: 28, // Random Discount Percentage
     rating: 4.5,
     reviews: 65,
+    stock: 40,
     image: jacket
   },
   {
@@ -237,6 +243,7 @@ export const bestSellers = [
     discount: 18,
     rating: 4.6,
     reviews: 65,
+    stock: 18,
     image: gucciBag
   },
   {
@@ -246,6 +253,7 @@ export const bestSellers = [
     discount: 0, // No discount
     rating: 4.7,
     reviews: 65,
+    stock: 22,
     image: cpuCooler
   },
   {
@@ -255,6 +263,7 @@ export const bestSellers = [
     discount: 20,
     rating: 4.5,
     reviews: 65,
+    stock: 35,
     image: bookshelf
   }
 ];
@@ -267,6 +276,7 @@ export const exploreProducts = [
     discount: 0, // No discount
     rating: 4.5,
     reviews: 95,
+    stock: 50,
     image: dogFood
   },
   {
@@ -276,6 +286,7 @@ export const exploreProducts = [
     discount: 0,
     rating: 4.6,
     reviews: 35,
+    stock: 12,
     image: camera
   },
   {
@@ -285,6 +296,7 @@ export const exploreProducts = [
     discount: 0,
     rating: 4.7,
     reviews: 65,
+    stock: 8,
     image: laptop
   },
   {
@@ -294,6 +306,7 @@ export const exploreProducts = [
     discount: 0,
     rating: 4.8,
     reviews: 145,
+    stock: 20,
     image: curologySet
   },
   {
@@ -303,6 +316,7 @@ export const exploreProducts = [
     discount: 0,
     rating: 4.5,
     reviews: 65,
+    stock: 14,
     image: electricCar
   },
   {
@@ -312,6 +326,7 @@ export const exploreProducts = [
     discount: 0,
     rating: 4.6,
     reviews: 35,
+    stock: 25,
     image: footballBoot
   },
   {
@@ -321,6 +336,7 @@ export const exploreProducts = [
     discount: 0,
     rating: 4.4,
     reviews: 55,
+    stock: 30,
     image: gpPad
   },
   {
@@ -330,10 +346,10 @@ export const exploreProducts = [
     discount: 0,
     rating: 4.5,
     reviews: 55,
+    stock: 19,
     image: satinJacket
   }
 ];
-
 
 export const services = [
   {

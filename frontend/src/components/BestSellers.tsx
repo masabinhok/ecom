@@ -14,7 +14,7 @@ const BestSellers = () => {
       <div className="w-full  flex items-center justify-between mt-5 ">
         <h1 className="text-3xl font-semibold">Best Selling Products</h1>
         <Link to="/shop">
-          <button className="text-white bg-brand px-6 py-2 text-sm rounded-sm cursor-pointer" >
+          <button className="text-white bg-brand px-6 py-2 text-sm rounded-sm " >
             View All
           </button>
         </Link>

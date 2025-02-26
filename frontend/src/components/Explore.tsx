@@ -33,7 +33,7 @@ const Explore = () => {
       </section>
       <div className="flex-center my-10">
         <Link to="/shop">
-          <button className="bg-brand text-white py-3 px-10 text-sm rounded-sm cursor-pointer">
+          <button className="bg-brand text-white py-3 px-10 text-sm rounded-sm ">
             View All Products
           </button>
         </Link>

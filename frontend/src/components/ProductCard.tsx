@@ -47,10 +47,10 @@ const ProductCard = ({ product, showDelete = false, showAddToCart = false, showR
           !showDelete &&
           (
             <>
-              <button className="bg-white-200 absolute top-2 right-2 p-2 rounded-full cursor-pointer ">
+              <button className="bg-white-200 absolute top-2 right-2 p-2 rounded-full  ">
                 <img src={heart} alt="wishlist_icon" className="size-4" />
               </button>
-              <button className="bg-white-200 absolute top-12 right-2 p-2 rounded-full cursor-pointer ">
+              <button className="bg-white-200 absolute top-12 right-2 p-2 rounded-full  ">
                 <img src={eye} alt="wishlist_icon" className="size-4" />
               </button></>
 
@@ -59,7 +59,7 @@ const ProductCard = ({ product, showDelete = false, showAddToCart = false, showR
 
         {
           showDelete && (
-            <button className="bg-white-200 absolute top-2 right-2 p-2 rounded-full cursor-pointer ">
+            <button className="bg-white-200 absolute top-2 right-2 p-2 rounded-full  ">
               <img src={deleteIcon} alt="wishlist_icon" className="size-4" />
             </button>
           )

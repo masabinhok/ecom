@@ -30,8 +30,8 @@ const Navbar = () => {
           <ul className="flex-center gap-10">
             {
               NavElem.map((elem, index) => (
-                <NavLink to={elem.link} key={index} 
-                className={({isActive})=>isActive ? "underline" : ""}>
+                <NavLink to={elem.link} key={index}
+                  className={({ isActive }) => isActive ? "underline" : ""}>
                   <li>
                     {elem.name}
                   </li></NavLink>
@@ -42,7 +42,7 @@ const Navbar = () => {
         <div className="flex-center gap-5">
           <div className="flex-center bg-gray-100 rounded-sm px-4 py-2 w-full">
             <input type="search" placeholder="What are you looking for?" className="text-sm w-[200px] outline-none " />
-            <img src={search} alt="search" className="size-5 cursor-pointer" />
+            <img src={search} alt="search" className="size-5 " />
           </div>
           <div className="flex-center gap-5 ">
             <Link to="/wishlist">

@@ -22,7 +22,7 @@ const SignUp = () => {
         Sign up with Google
       </button>
 
-      <p className=" mt-10 text-center text-black-400">Already have an account? <Link className="cursor-pointer font-medium" to="/login"><span className="text-black-700 border-b border-black-200 pb-1 ml-1">Login</span></Link></p>
+      <p className=" mt-10 text-center text-black-400">Already have an account? <Link className=" font-medium" to="/login"><span className="text-black-700 border-b border-black-200 pb-1 ml-1">Login</span></Link></p>
     </section>
   )
 }

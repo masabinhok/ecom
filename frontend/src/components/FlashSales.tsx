@@ -20,14 +20,14 @@ const FlashSales = () => {
         {
           flashSales.map((product) => {
             return (
-              <ProductCard key={product.id} product={product}  />
+              <ProductCard key={product.id} product={product} />
             )
           })
         }
       </section>
       <div className="flex-center my-10">
         <Link to="/shop">
-          <button className="bg-brand text-white py-3 px-10 text-sm rounded-sm cursor-pointer">
+          <button className="bg-brand text-white py-3 px-10 text-sm rounded-sm ">
             View All Products
           </button>
         </Link>

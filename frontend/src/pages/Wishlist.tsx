@@ -10,7 +10,7 @@ const Wishlist = () => {
         <p>
           Wishlist(4)
         </p>
-        <button className="px-10 py-3 border-2 border-black-200 rounded-sm font-medium text-sm cursor-pointer">
+        <button className="px-10 py-3 border-2 border-black-200 rounded-sm font-medium text-sm ">
           Move all to Cart
         </button>
       </div>
@@ -29,7 +29,7 @@ const Wishlist = () => {
             <div className="text-brand font-semibold">Just For You</div>
           </div>
           <Link to="/shop">
-            <button className="border-2 border-black-200  px-10 py-3 text-sm font-medium rounded-sm cursor-pointer">
+            <button className="border-2 border-black-200  px-10 py-3 text-sm font-medium rounded-sm ">
               See All
             </button>
           </Link>
