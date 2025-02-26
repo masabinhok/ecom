@@ -1,3 +1,4 @@
+import { Link } from "react-router"
 import CartItem from "../components/CartItem"
 import { flashSales } from "../constants"
 
@@ -5,7 +6,9 @@ const Cart = () => {
   return (
     <main className="max-w-[1320px] w-full flex flex-col p-10">
       <div className="text-sm flex items-center gap-2 mb-10">
-        <span className="text-black-400">Home</span>
+        <Link to="/">
+          <span className="text-black-400">Home</span>
+        </Link>
         /
         <span className="">Cart</span>
       </div>
