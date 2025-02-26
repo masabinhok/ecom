@@ -42,8 +42,12 @@ import speakers from './speakers.png'
 import customerService from './customer-service.png'
 import secure from './secure.png'
 import delivery from './delivery.png'
+import loginSnap from './login-snap.png'
+import google from './google.svg'
 
 export {
+  loginSnap,
+  google, 
   heart,
   ps5,
   speaker,
