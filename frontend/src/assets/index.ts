@@ -46,9 +46,15 @@ import loginSnap from './login-snap.png'
 import google from './google.svg'
 import deleteIcon from './delete.svg'
 import africanModel from './african-model.png'
+import emmaWatson from './emma-watson.png'
+import willSmith from './will-smith.png'
+import tomCruse from './tom-cruse.png'
 
 export {
   loginSnap,
+  tomCruse,
+  willSmith,
+  emmaWatson,
   deleteIcon,
   africanModel,
   google, 

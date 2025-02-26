@@ -1,4 +1,4 @@
-import { bookshelf, camera, cellphone, chair, cpuCooler, curologySet, customerService, delivery, dogFood, electricCar, facebook, footballBoot, gamepad, gpPad, gucciBag, instagram, jacket, keyboard, laptop, linkedin, monitor, satinJacket, twitter } from "../assets"
+import { bookshelf, camera, cellphone, chair, cpuCooler, curologySet, customerService, delivery, dogFood, electricCar, emmaWatson, facebook, footballBoot, gamepad, gpPad, gucciBag, instagram, jacket, keyboard, laptop, linkedin, monitor, satinJacket, tomCruse, twitter, willSmith } from "../assets"
 import { beautyAd, electronicsAd, globalAd, nabilBankAd, powderAd } from "../assets"
 
 export const footerData = [
@@ -390,4 +390,31 @@ export const aboutUs = [
     amount: "25k",
     desc: "Annual gross in our site."
   }
+]
+
+export const people = [
+  {
+    image: tomCruse,
+    name: "Tom Cruise",
+    position: "Founder & Chairman",
+    twitterLink: "https://www.twitter.com",
+    instagramLink: "https://www.instagram.com",
+    linkedinLink: "https://www.linkedin.com",
+  },
+  {
+    image: emmaWatson,
+    name: "Emma Watson",
+    position: "Managing Director",
+    twitterLink: "https://www.twitter.com",
+    instagramLink: "https://www.instagram.com",
+    linkedinLink: "https://www.linkedin.com",
+  },
+  {
+    image: willSmith,
+    name: "Will Smith",
+    position: "Prodcut Manager",
+    twitterLink: "https://www.twitter.com",
+    instagramLink: "https://www.instagram.com",
+    linkedinLink: "https://www.linkedin.com",
+  },
 ]

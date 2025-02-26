@@ -1,6 +1,7 @@
 import { Link } from "react-router";
-import { africanModel } from "../assets";
-import { aboutUs } from "../constants";
+import { africanModel, facebook, instagram, linkedin, twitter } from "../assets";
+import { aboutUs, people } from "../constants";
+import Services from "../components/Services";
 
 const About = () => {
   return (
@@ -28,7 +29,7 @@ const About = () => {
         </div>
       </section>
 
-      <section className="grid grid-cols-4   gap-4 w-full mt-20">
+      <section className="grid grid-cols-4   gap-4 w-full mt-30 mb-10">
         {aboutUs.map((item, index) => {
           return (
             <div key={index} className="flex flex-col group items-center border-2 border-gray-200 p-10 rounded-lg hover:bg-brand hover:text-white max-w-xs">
@@ -43,6 +44,33 @@ const About = () => {
           );
         })}
       </section>
+
+      <section className="grid grid-cols-3 justify-itesms-center gap-10 my-20">
+        {
+          people.map((person, index) => (
+            <div key={index} className="flex flex-col">
+              <div className="bg-black-100 flex-center rounded-sm pt-5">
+                <img src={person.image} alt="" />
+              </div>
+              <h1 className="mt-5 text-xl font-semibold">
+                {person.name}
+              </h1>
+              <p className="text-sm text-black-500">
+                {person.position}
+              </p>
+              <div className="flex gap-2 items-center mt-2">
+                <img src={twitter} alt="facebook-icon" className="size-5 invert" />
+                <img src={linkedin} alt="facebook-icon" className="size-3 invert" />
+                <img src={instagram} alt="facebook-icon" className="size-4 invert" />
+              </div>
+            </div>
+          ))
+        }
+      </section>
+
+      <Services />
+
+
 
 
     </main>
