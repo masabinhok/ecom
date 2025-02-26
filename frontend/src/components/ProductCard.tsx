@@ -12,12 +12,12 @@ interface ProductCardProps {
     rating: number
     reviews: number
   },
-  showDiscount?: boolean,
-  showDiscountAmount?: boolean
-  isWishlist?: boolean
+  showDelete?: boolean
+  showAddToCart?: boolean
+  showReviews?: boolean
 }
 
-const ProductCard = ({ product, showDiscount = true, showDiscountAmount = true, isWishlist = false }: ProductCardProps) => {
+const ProductCard = ({ product, showDelete = false, showAddToCart = false, showReviews = true }: ProductCardProps) => {
   const [hover, setHover] = useState<boolean>(false)
   return (
     <div onMouseEnter={() => {
@@ -29,14 +29,16 @@ const ProductCard = ({ product, showDiscount = true, showDiscountAmount = true, 
       className="max-w-[270px] w-full">
       <div className="relative bg-black-100 flex-center h-[250px] rounded-sm ">
         <img src={product.image} alt="gamepad" className=" object-cover" />
+
         {
-          showDiscount &&
-          <button className="absolute top-2 left-2 bg-brand px-4 py-2 text-white rounded-sm text-xs">
+          product.discount && <button className="absolute top-2 left-2 bg-brand px-4 py-2 text-white rounded-sm text-xs">
             {((product.price - product.discount) / product.price * 100).toFixed(2)}% off
           </button>
         }
+
+
         {
-          (isWishlist || hover) && (
+          (showAddToCart || hover) && (
             <Link to={`/product-details/${product.id}`} className="absolute bottom-0 py-3 w-full bg-black-900 text-white  text-center text-sm">
               Add to Cart
             </Link>
@@ -45,7 +47,7 @@ const ProductCard = ({ product, showDiscount = true, showDiscountAmount = true, 
 
 
         {
-          !isWishlist &&
+          !showDelete &&
           (
             <>
               <button className="bg-white-200 absolute top-2 right-2 p-2 rounded-full cursor-pointer ">
@@ -59,7 +61,7 @@ const ProductCard = ({ product, showDiscount = true, showDiscountAmount = true, 
         }
 
         {
-          isWishlist && (
+          showDelete && (
             <button className="bg-white-200 absolute top-2 right-2 p-2 rounded-full cursor-pointer ">
               <img src={deleteIcon} alt="wishlist_icon" className="size-4" />
             </button>
@@ -70,15 +72,15 @@ const ProductCard = ({ product, showDiscount = true, showDiscountAmount = true, 
       </div>
       <div className="text-sm font-medium flex flex-col mt-4">
         <p className="">{product.name}</p>
-        <div className={`flex ${showDiscountAmount ? "flex-col" : "flex-row items-end gap-3"} `}>
+        <div className={`flex ${product.discount ? "flex-col" : "flex-row items-end gap-3"} `}>
           <p className="text-brand mt-2">${product.discount}
             {
-              showDiscountAmount &&
+              product.discount &&
               <span className="text-black-300 line-through ml-2">${product.price}</span>
             }
           </p>
           {
-            !isWishlist &&
+            showReviews &&
             <p className="flex gap-2 items-center mt-1">
               <span className="text-yellow">{product.rating}</span>
               <span className="text-black-300">({product.reviews})</span>

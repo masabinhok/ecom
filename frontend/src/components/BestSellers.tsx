@@ -23,7 +23,7 @@ const BestSellers = () => {
         {
           bestSellers.map((product) => {
             return (
-              <ProductCard key={product.id} product={product} showDiscount={false} />
+              <ProductCard key={product.id} product={product} />
             )
           })
         }

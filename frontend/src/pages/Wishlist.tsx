@@ -18,7 +18,7 @@ const Wishlist = () => {
       <section className="grid justify-items-center grid-cols-4 mt-10 justify">
         {
           flashSales.map((product, index) => (
-            <ProductCard key={index} product={product} isWishlist={true} />
+            <ProductCard key={index} product={product} showDelete={true} showAddToCart={true} showReviews={false} />
           ))
         }
       </section>
@@ -40,7 +40,7 @@ const Wishlist = () => {
           {
             bestSellers.map((product) => {
               return (
-                <ProductCard key={product.id} product={product} showDiscount={true} showDiscountAmount={true} />
+                <ProductCard key={product.id} product={product} showAddToCart={true} />
               )
             })
           }
