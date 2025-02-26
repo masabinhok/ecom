@@ -368,3 +368,26 @@ export const services = [
     image: delivery,
   }
 ]
+
+export const aboutUs = [
+  {
+    icon: customerService,
+    amount: "10.5k",
+    desc: "Sellers active on our site."
+  },
+  {
+    icon: customerService,
+    amount: "33k",
+    desc: "Monthly Product Sale."
+  },
+  {
+    icon: customerService,
+    amount: "45.5k",
+    desc: "Customers active in our site."
+  },
+  {
+    icon: customerService,
+    amount: "25k",
+    desc: "Annual gross in our site."
+  }
+]

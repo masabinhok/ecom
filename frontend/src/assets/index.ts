@@ -45,10 +45,12 @@ import delivery from './delivery.png'
 import loginSnap from './login-snap.png'
 import google from './google.svg'
 import deleteIcon from './delete.svg'
+import africanModel from './african-model.png'
 
 export {
   loginSnap,
   deleteIcon,
+  africanModel,
   google, 
   heart,
   ps5,
