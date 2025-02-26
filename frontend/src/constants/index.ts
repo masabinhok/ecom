@@ -154,13 +154,12 @@ export const heroImages = [
     src: electronicsAd
   }
 ];
-
 export const flashSales = [
   {
     id: 1,
     name: "HAVIT HV-G92 Gamepad",
     price: 160,
-    discount: 120, // Discounted Price
+    discount: 25, // Random Discount Percentage
     rating: 4.5,
     reviews: 88,
     image: gamepad
@@ -169,7 +168,7 @@ export const flashSales = [
     id: 2,
     name: "AK-900 Wired Keyboard",
     price: 1160,
-    discount: 960, // Discounted Price
+    discount: 15,
     rating: 4.3,
     reviews: 75,
     image: keyboard
@@ -178,7 +177,7 @@ export const flashSales = [
     id: 3,
     name: "IPS LCD Gaming Monitor",
     price: 400,
-    discount: 370, // Discounted Price
+    discount: 8,
     rating: 4.7,
     reviews: 99,
     image: monitor
@@ -187,7 +186,7 @@ export const flashSales = [
     id: 4,
     name: "S-Series Comfort Chair",
     price: 400,
-    discount: 375, // Discounted Price
+    discount: 6,
     rating: 4.7,
     reviews: 99,
     image: chair
@@ -221,13 +220,12 @@ export const categories = [
   },
 ]
 
-
 export const bestSellers = [
   {
     id: 1,
     name: "The North Coat",
     price: 360,
-    discount: 260, // Discounted Price
+    discount: 28, // Random Discount Percentage
     rating: 4.5,
     reviews: 65,
     image: jacket
@@ -236,7 +234,7 @@ export const bestSellers = [
     id: 2,
     name: "Gucci Duffle Bag",
     price: 1160,
-    discount: 960, // Discounted Price
+    discount: 18,
     rating: 4.6,
     reviews: 65,
     image: gucciBag
@@ -245,7 +243,7 @@ export const bestSellers = [
     id: 3,
     name: "RGB Liquid CPU Cooler",
     price: 160,
-    discount: 160, // No discount
+    discount: 0, // No discount
     rating: 4.7,
     reviews: 65,
     image: cpuCooler
@@ -254,20 +252,19 @@ export const bestSellers = [
     id: 4,
     name: "Small Bookshelf",
     price: 360,
-    discount: 170, // Discounted Price
+    discount: 20,
     rating: 4.5,
     reviews: 65,
     image: bookshelf
   }
 ];
 
-
 export const exploreProducts = [
   {
     id: 1,
     name: "Breed Dry Dog Food",
     price: 100,
-    discount: 100, // No discount
+    discount: 0, // No discount
     rating: 4.5,
     reviews: 95,
     image: dogFood
@@ -276,7 +273,7 @@ export const exploreProducts = [
     id: 2,
     name: "CANON EOS DSLR Camera",
     price: 360,
-    discount: 360, // No discount
+    discount: 0,
     rating: 4.6,
     reviews: 35,
     image: camera
@@ -285,7 +282,7 @@ export const exploreProducts = [
     id: 3,
     name: "ASUS FHD Gaming Laptop",
     price: 700,
-    discount: 700, // No discount
+    discount: 0,
     rating: 4.7,
     reviews: 65,
     image: laptop
@@ -294,7 +291,7 @@ export const exploreProducts = [
     id: 4,
     name: "Curology Product Set",
     price: 500,
-    discount: 500, // No discount
+    discount: 0,
     rating: 4.8,
     reviews: 145,
     image: curologySet
@@ -303,7 +300,7 @@ export const exploreProducts = [
     id: 5,
     name: "Kids Electric Car",
     price: 960,
-    discount: 960, // No discount
+    discount: 0,
     rating: 4.5,
     reviews: 65,
     image: electricCar
@@ -312,7 +309,7 @@ export const exploreProducts = [
     id: 6,
     name: "Jr. Zoom Soccer Cleats",
     price: 1160,
-    discount: 1160, // No discount
+    discount: 0,
     rating: 4.6,
     reviews: 35,
     image: footballBoot
@@ -321,7 +318,7 @@ export const exploreProducts = [
     id: 7,
     name: "GP11 Shooter USB Gamepad",
     price: 660,
-    discount: 660, // No discount
+    discount: 0,
     rating: 4.4,
     reviews: 55,
     image: gpPad
@@ -330,12 +327,13 @@ export const exploreProducts = [
     id: 8,
     name: "Quilted Satin Jacket",
     price: 660,
-    discount: 660, // No discount
+    discount: 0,
     rating: 4.5,
     reviews: 55,
     image: satinJacket
   }
 ];
+
 
 export const services = [
   {

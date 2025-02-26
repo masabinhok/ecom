@@ -29,14 +29,12 @@ const ProductCard = ({ product, showDelete = false, showAddToCart = false, showR
       className="max-w-[270px] w-full">
       <div className="relative bg-black-100 flex-center h-[250px] rounded-sm ">
         <img src={product.image} alt="gamepad" className=" object-cover" />
-
         {
-          product.discount && <button className="absolute top-2 left-2 bg-brand px-4 py-2 text-white rounded-sm text-xs">
-            {((product.price - product.discount) / product.price * 100).toFixed(2)}% off
+          product.discount !== 0 &&
+          <button className="absolute top-2 left-2 bg-brand px-4 py-2 text-white rounded-sm text-xs">
+            {product.discount} %OFF
           </button>
         }
-
-
         {
           (showAddToCart || hover) && (
             <Link to={`/product-details/${product.id}`} className="absolute bottom-0 py-3 w-full bg-black-900 text-white  text-center text-sm">
@@ -44,7 +42,6 @@ const ProductCard = ({ product, showDelete = false, showAddToCart = false, showR
             </Link>
           )
         }
-
 
         {
           !showDelete &&
@@ -73,7 +70,9 @@ const ProductCard = ({ product, showDelete = false, showAddToCart = false, showR
       <div className="text-sm font-medium flex flex-col mt-4">
         <p className="">{product.name}</p>
         <div className={`flex ${product.discount ? "flex-col" : "flex-row items-end gap-3"} `}>
-          <p className="text-brand mt-2">${product.discount}
+          <p className="text-brand mt-2">${
+            product.discount ? (product.price - (product.price * product.discount) / 100) : product.price
+          }
             {
               product.discount &&
               <span className="text-black-300 line-through ml-2">${product.price}</span>
