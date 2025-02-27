@@ -1,4 +1,4 @@
-import { bookshelf, camera, cellphone, chair, cpuCooler, curologySet, customerService, delivery, dogFood, electricCar, emmaWatson, facebook, footballBoot, gamepad, gpPad, gucciBag, instagram, jacket, keyboard, laptop, linkedin, monitor, satinJacket, tomCruse, twitter, willSmith } from "../assets"
+import { bookshelf, camera, cameraIcon, cellphone, chair, computerIcon, cpuCooler, curologySet, customerService, delivery, dogFood, electricCar, emmaWatson, facebook, footballBoot, gamepad, gamingIcon, gpPad, gucciBag, headphoneIcon, instagram, jacket, keyboard, laptop, linkedin, monitor, satinJacket, smartwatchIcon, tomCruse, twitter, willSmith } from "../assets"
 import { beautyAd, electronicsAd, globalAd, nabilBankAd, powderAd } from "../assets"
 
 export const footerData = [
@@ -205,23 +205,23 @@ export const categories = [
   },
   {
     name: 'Computers',
-    image: cellphone,
+    image: computerIcon,
   },
   {
     name: 'Smartwatch',
-    image: cellphone,
+    image: smartwatchIcon,
   },
   {
     name: 'Camera',
-    image: cellphone,
+    image: cameraIcon,
   },
   {
     name: 'Headphones',
-    image: cellphone,
+    image: headphoneIcon,
   },
   {
     name: 'Gaming',
-    image: cellphone,
+    image: gamingIcon,
   },
 ]
 

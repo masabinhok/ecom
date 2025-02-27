@@ -51,10 +51,20 @@ import willSmith from './will-smith.png'
 import tomCruse from './tom-cruse.png'
 import call from './call.svg'
 import mail from './mail.svg'
+import cameraIcon from './camera.svg'
+import headphoneIcon from './headphone.svg'
+import gamingIcon from './gaming.svg'
+import computerIcon from './computer.svg'
+import smartwatchIcon from './smartwatch.svg'
 
 export {
   loginSnap,
   tomCruse,
+  smartwatchIcon,
+  computerIcon,
+  gamingIcon,
+  headphoneIcon,
+  cameraIcon,
   call,
   mail,
   willSmith,
