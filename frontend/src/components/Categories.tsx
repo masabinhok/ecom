@@ -25,9 +25,9 @@ const Categories = () => {
         {
           categories.map((category, index) => (
             <Link key={index} to={`/shop/${category.name}`} >
-              <div className="flex-center flex-col p-10 gap-3 border rounded-sm border-black-200" >
-                <img src={category.image} alt={category.name} />
-                <p className="text-sm">{category.name}</p>
+              <div className="flex-center flex-col p-10 hover:text-white gap-3 border rounded-sm border-black-200 hover:bg-brand  group" >
+                <img src={category.image} alt={category.name} className="group-hover:invert" />
+                <p className="text-sm ">{category.name}</p>
               </div>
             </Link>
 
