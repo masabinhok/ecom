@@ -56,9 +56,20 @@ import headphoneIcon from './headphone.svg'
 import gamingIcon from './gaming.svg'
 import computerIcon from './computer.svg'
 import smartwatchIcon from './smartwatch.svg'
-
+import gamepad0 from './gamepad0.svg'
+import gamepad1 from './gamepad1.svg'
+import gamepad2 from './gamepad2.svg'
+import gamepad3 from './gamepad3.svg'
+import gamepad5 from './gamepad5.svg'
+import returnIcon from './return-icon.svg'
 export {
   loginSnap,
+  gamepad0,
+  gamepad1,
+  returnIcon,
+  gamepad2,
+  gamepad3,
+  gamepad5,
   tomCruse,
   smartwatchIcon,
   computerIcon,
