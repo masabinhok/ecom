@@ -32,7 +32,7 @@ const ProductCard = ({ product, showDelete = false, showAddToCart = false, showR
         {
           product.discount !== 0 &&
           <button className="absolute top-2 left-2 bg-brand px-4 py-2 text-white rounded-sm text-xs">
-            {product.discount} %OFF
+            {product.discount}% OFF
           </button>
         }
         {
