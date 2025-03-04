@@ -1,5 +1,5 @@
 import { Link, NavLink } from "react-router"
-import { cart, heart, search } from "../assets"
+import { cart, heart, search, user } from "../assets"
 
 
 const NavElem = [{
@@ -45,11 +45,15 @@ const Navbar = () => {
             <img src={search} alt="search" className="size-5 " />
           </div>
           <div className="flex-center gap-5 ">
+            
             <Link to="/wishlist">
               <img src={heart} alt="wishlist" className="w-8 h-auto object-cover" />
             </Link>
             <Link to="/cart">
               <img src={cart} alt="cart" className="size-10" />
+            </Link>
+            <Link to="/account" className="rounded-full bg-brand">
+              <img src={user} alt="user" className="w-12 h-auto object-cover" />
             </Link>
           </div>
 

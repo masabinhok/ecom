@@ -62,7 +62,10 @@ import gamepad2 from './gamepad2.svg'
 import gamepad3 from './gamepad3.svg'
 import gamepad5 from './gamepad5.svg'
 import returnIcon from './return-icon.svg'
+import user from './user.svg'
+
 export {
+  user, 
   loginSnap,
   gamepad0,
   gamepad1,
