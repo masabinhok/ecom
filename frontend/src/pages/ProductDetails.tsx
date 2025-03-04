@@ -1,8 +1,8 @@
 import { Link } from "react-router"
-import { customerService, delivery, gamepad0, gamepad1, gamepad2, gamepad3, gamepad5, heart, returnIcon } from "../assets"
+import {  delivery, gamepad0, gamepad1, gamepad2, gamepad3, gamepad5, heart, returnIcon } from "../assets"
 import { useState } from "react"
 import BrandButton from "../components/BrandButton"
-import { bestSellers, flashSales } from "../constants"
+import { flashSales } from "../constants"
 import ProductCard from "../components/ProductCard"
 
 
