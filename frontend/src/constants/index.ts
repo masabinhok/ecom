@@ -418,3 +418,172 @@ export const people = [
     linkedinLink: "https://www.linkedin.com",
   },
 ]
+
+
+export const products = [
+  // Flash Sales
+  {
+    id: 1,
+    name: "HAVIT HV-G92 Gamepad",
+    price: 160,
+    discount: 25,
+    rating: 4.5,
+    reviews: 88,
+    stock: 30,
+    image: gamepad
+  },
+  {
+    id: 2,
+    name: "AK-900 Wired Keyboard",
+    price: 1160,
+    discount: 15,
+    rating: 4.3,
+    reviews: 75,
+    stock: 20,
+    image: keyboard
+  },
+  {
+    id: 3,
+    name: "IPS LCD Gaming Monitor",
+    price: 400,
+    discount: 8,
+    rating: 4.7,
+    reviews: 99,
+    stock: 15,
+    image: monitor
+  },
+  {
+    id: 4,
+    name: "S-Series Comfort Chair",
+    price: 400,
+    discount: 6,
+    rating: 4.7,
+    reviews: 99,
+    stock: 25,
+    image: chair
+  },
+  
+  // Best Sellers
+  {
+    id: 5,
+    name: "The North Coat",
+    price: 360,
+    discount: 28,
+    rating: 4.5,
+    reviews: 65,
+    stock: 40,
+    image: jacket
+  },
+  {
+    id: 6,
+    name: "Gucci Duffle Bag",
+    price: 1160,
+    discount: 18,
+    rating: 4.6,
+    reviews: 65,
+    stock: 18,
+    image: gucciBag
+  },
+  {
+    id: 7,
+    name: "RGB Liquid CPU Cooler",
+    price: 160,
+    discount: 0,
+    rating: 4.7,
+    reviews: 65,
+    stock: 22,
+    image: cpuCooler
+  },
+  {
+    id: 8,
+    name: "Small Bookshelf",
+    price: 360,
+    discount: 20,
+    rating: 4.5,
+    reviews: 65,
+    stock: 35,
+    image: bookshelf
+  },
+  
+  // Explore Products
+  {
+    id: 9,
+    name: "Breed Dry Dog Food",
+    price: 100,
+    discount: 0,
+    rating: 4.5,
+    reviews: 95,
+    stock: 50,
+    image: dogFood
+  },
+  {
+    id: 10,
+    name: "CANON EOS DSLR Camera",
+    price: 360,
+    discount: 0,
+    rating: 4.6,
+    reviews: 35,
+    stock: 12,
+    image: camera
+  },
+  {
+    id: 11,
+    name: "ASUS FHD Gaming Laptop",
+    price: 700,
+    discount: 0,
+    rating: 4.7,
+    reviews: 65,
+    stock: 8,
+    image: laptop
+  },
+  {
+    id: 12,
+    name: "Curology Product Set",
+    price: 500,
+    discount: 0,
+    rating: 4.8,
+    reviews: 145,
+    stock: 20,
+    image: curologySet
+  },
+  {
+    id: 13,
+    name: "Kids Electric Car",
+    price: 960,
+    discount: 0,
+    rating: 4.5,
+    reviews: 65,
+    stock: 14,
+    image: electricCar
+  },
+  {
+    id: 14,
+    name: "Jr. Zoom Soccer Cleats",
+    price: 1160,
+    discount: 0,
+    rating: 4.6,
+    reviews: 35,
+    stock: 25,
+    image: footballBoot
+  },
+  {
+    id: 15,
+    name: "GP11 Shooter USB Gamepad",
+    price: 660,
+    discount: 0,
+    rating: 4.4,
+    reviews: 55,
+    stock: 30,
+    image: gpPad
+  },
+  {
+    id: 16,
+    name: "Quilted Satin Jacket",
+    price: 660,
+    discount: 0,
+    rating: 4.5,
+    reviews: 55,
+    stock: 19,
+    image: satinJacket
+  }
+];
