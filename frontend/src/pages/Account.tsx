@@ -5,15 +5,21 @@ const Account = () => {
   return (
     <main className="max-w-[1320px] w-full flex flex-col p-10 mb-20">
       {/* Breadcrumb Navigation */}
-      <div className="text-sm flex items-center gap-2 mb-10">
-        <Link to="/">
-          <span className="text-black-400">Home</span>
-        </Link>
-        /
-        <Link to="/account">
-          <span className="text-black-400">My Account</span>
-        </Link>
+      <div className="flex items-center justify-between">
+        <div className="text-sm flex items-center gap-2 mb-10">
+          <Link to="/">
+            <span className="text-black-400">Home</span>
+          </Link>
+          /
+          <Link to="/account">
+            <span className="text-black-400">My Account</span>
+          </Link>
+        </div>
+        <div >
+            <h2 className="text-sm text-brand font-medium">Sabin Shrestha</h2>
+        </div>
       </div>
+
 
       <section className="flex gap-10 text-sm">
         {/* Sidebar */}
