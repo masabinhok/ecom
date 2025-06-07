@@ -9,15 +9,15 @@ export class AuthController {
 
   @Public()
   @Post('signup')
-  async signUp(@Body() signUpDto: SignUpDto){
-    console.log('hello fromsignup')
+  async signUp(@Body() signUpDto: SignUpDto) {
+    console.log('hello fromsignup');
     console.log(signUpDto);
     return this.authService.signUp(signUpDto);
   }
 
   @Public()
   @Post('signin')
-  async signIn(@Body() signInDto: SignUpDto){
+  async signIn(@Body() signInDto: SignUpDto) {
     return this.authService.signIn(signInDto);
   }
 }
