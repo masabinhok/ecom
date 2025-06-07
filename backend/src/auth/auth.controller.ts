@@ -10,8 +10,6 @@ export class AuthController {
   @Public()
   @Post('signup')
   async signUp(@Body() signUpDto: SignUpDto) {
-    console.log('hello fromsignup');
-    console.log(signUpDto);
     return this.authService.signUp(signUpDto);
   }
 
