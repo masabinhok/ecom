@@ -28,36 +28,38 @@ enum PaymentStatus {
 }
 
 model User {
-  id        Int      @id @default(autoincrement())
+  id        Int        @id @default(autoincrement())
   name      String
-  email     String   @unique
+  email     String     @unique
   password  String
-  role      Role     @default(CUSTOMER)
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
+  role      Role       @default(CUSTOMER)
+  createdAt DateTime   @default(now())
+  updatedAt DateTime   @updatedAt
   addresses Address[]
   orders    Order[]
   cart      Cart?
   reviews   Review[]
   wishlists Wishlist[]
+
   @@index([email])
 }
 
 model Product {
-  id          Int      @id @default(autoincrement())
-  name        String
-  description String
-  price       Decimal  @db.Decimal(10, 2)
-  stock       Int
-  category    Category @relation(fields: [categoryId], references: [id])
-  categoryId  Int
-  sku         String?  @unique
-  imageUrl    String?
-  variants    ProductVariant[]
-  reviews     Review[]
-  cartItems   CartItem[]
-  orderItems  OrderItem[]
+  id            Int              @id @default(autoincrement())
+  name          String
+  description   String
+  price         Decimal          @db.Decimal(10, 2)
+  stock         Int
+  category      Category         @relation(fields: [categoryId], references: [id])
+  categoryId    Int
+  sku           String?          @unique
+  imageUrl      String?
+  variants      ProductVariant[]
+  reviews       Review[]
+  cartItems     CartItem[]
+  orderItems    OrderItem[]
   wishlistItems WishlistItem[]
+
   @@index([name, categoryId])
 }
 
@@ -76,6 +78,7 @@ model Order {
   addressId       Int
   coupon          Coupon?     @relation(fields: [couponId], references: [id])
   couponId        Int?
+
   @@index([userId, createdAt])
 }
 
@@ -89,6 +92,7 @@ model OrderItem {
   variantId Int?
   quantity  Int
   price     Decimal         @db.Decimal(10, 2)
+
   @@unique([orderId, productId, variantId])
 }
 
@@ -110,6 +114,7 @@ model CartItem {
   variant         ProductVariant? @relation(fields: [variantId], references: [id])
   variantId       Int?
   priceAtAddition Decimal         @db.Decimal(10, 2)
+
   @@unique([cartId, productId, variantId])
 }
 
@@ -172,24 +177,26 @@ model Review {
   comment    String
   createdAt  DateTime @default(now())
   isApproved Boolean  @default(false)
+
   @@unique([productId, userId])
 }
 
 model Wishlist {
   id     Int            @id @default(autoincrement())
   user   User           @relation(fields: [userId], references: [id])
-  userId Int
+  userId Int            @unique
   items  WishlistItem[]
 }
 
 model WishlistItem {
-  id         Int       @id @default(autoincrement())
-  wishlist   Wishlist  @relation(fields: [wishlistId], references: [id])
+  id         Int             @id @default(autoincrement())
+  wishlist   Wishlist        @relation(fields: [wishlistId], references: [id])
   wishlistId Int
   product    Product         @relation(fields: [productId], references: [id])
   productId  Int
   variant    ProductVariant? @relation(fields: [variantId], references: [id])
   variantId  Int?
+
   @@unique([productId, variantId, wishlistId])
 }
 
